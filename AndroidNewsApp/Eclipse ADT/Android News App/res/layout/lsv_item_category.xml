@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.solodroid.newsapp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_list_row"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <com.solodroid.newsapp.RoundedImageView
+            android:id="@+id/img_cat"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            app:border_color="@color/divider"
+            app:border_width="0dip"
+            app:corner_radius="0dip"
+            app:is_oval="true"
+            app:round_background="true" />
+
+        <TextView
+            android:id="@+id/txt_allnews_categty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/text_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

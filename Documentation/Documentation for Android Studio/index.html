@@ -1,0 +1,405 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Android News App - News Application Template for Android Studio</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Solodroid Developer">
+	<meta name="copyright" content="Solodroid Developer">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-04-30T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_18.png);}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-android-news-app-material-">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#about_the_files" title="About the Files">About the Files</a></li>
+			<li><a href="#getting_started" title="Getting Started">Getting Started</a></li>
+			<li><a href="#how_to_import_the_project_in_android_studio" title="How to Import the Project in Android Studio?">How to Import the Project in Android Studio?</a></li>
+			<li><a href="#how_to_rename_the_package_name" title="How to Rename the Package Name?">How to Rename the Package Name?</a></li>
+			<li><a href="#how_to_change_application_name" title="How to Change Application Name?">How to Change Application Name?</a></li>
+			<li><a href="#how_to_change_header_app_color" title="How to Change Header App Color?">How to Change Header App Color?</a></li>
+			<li><a href="#how_to_configure_webservice_in_your_server" title="How to Configure Webservice In Your Server?">How to Configure Webservice In Your Server?</a></li>
+			<li><a href="#how_to_configure_api_service_to_connect_data_in_android_app" title="How to Configure Api Service to Connect Data in Android App?">How to Configure Api Service to Connect Data in Android App?</a></li>
+			<li><a href="#username_and_password_for_login_into_admin_panel" title="Username and Password For Login into Admin Panel">Username and Password For Login into Admin Panel</a></li>
+			<li><a href="#how_to_put_server_url_in_application" title="How to put Server Url in Application?">How to put Server Url in Application?</a></li>
+			<li><a href="#how_to_change_admob_publisher_id" title="How to Change AdMob Publisher Id?">How to Change AdMob Publisher Id?</a></li>
+			<li><a href="#how_to_change_startapp_id" title="How to change StartApp Id?">How to change StartApp Id?</a></li>
+			<li><a href="#how_to_change_parse_push_notification_application_id" title="How to change Parse Push notification Application Id?">How to change Parse Push notification Application Id?</a></li>
+			<li><a href="#how_to_change_the_application_icon" title="How to Change the Application Icon?">How to Change the Application Icon?</a></li>
+			<li><a href="#how_to_disable_date_display_in_news_list" title="How to Disable Date Display in News List?">How to Disable Date Display in News List?</a></li>
+			<li><a href="#how_to_change_app_about_information" title="How to Change App About Information?">How to Change App About Information?</a></li>
+			<li><a href="#how_to_change_more_app_link" title="How to change More App Link?">How to change More App Link?</a></li>
+			<li><a href="#psd_files" title="PSD Files">PSD Files</a></li>
+			<li><a href="#graphics" title="Graphics">Graphics</a></li>
+			<li><a href="#rating" title="Rating">Rating</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Solodroid Developer 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Android News App</h1>
+	<h2>News Application Template for Android Studio</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 04/30/2015</li>
+	<li>latest update: 04/30/2015</li>
+	<li>by: Solodroid Developer</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:&#100;&#101;&#118;&#101;&#108;&#111;&#112;&#101;&#114;&#46;&#115;&#111;&#108;&#111;&#100;&#114;&#111;&#105;&#100;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#100;&#101;&#118;&#101;&#108;&#111;&#112;&#101;&#114;&#46;&#115;&#111;&#108;&#111;&#100;&#114;&#111;&#105;&#100;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p>Thank you for purchasing my app. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!</p>
+	</section>
+	
+	<section id="about_the_files">
+	<div class="page-header"><h3>About the Files</h3><hr class="notop"></div>
+<p>
+	Android News App (Material) is a mobile news system which run under Android platform that used for your own news application. With powerful and Responsive Admin Panel can manage category, news item, app profile information, change admin username and password with generate password, etc. This application created by Android for client side and then PHP MySQL for Admin side. Run under Android platform which is the most popular operating system in the world. Using this application you can save your money and time in creating application for your own news application.</p>
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif;">After you buy this item you will get project file of Android app template code, apk file, admin panel, sql database and also this documentation file to guide you installing this app.</span></p>
+</section>
+<section id="getting_started">
+	<div class="page-header"><h3>Getting Started</h3><hr class="notop"></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	Before doing installation, you need to do the following things :</div>
+<ol style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Have a web hosting to store admin panel files and SQL database. Because this documentation using cpanel, a web hosting with cpanel is recommended, if you want work with offline mode, you can use local webserver like xampp, ect with latest version</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Install tools that requires for developing Android app such as Java Development Kit and Android Studio as the Official Android IDE. For updated tutorial about how to install them, you can see and Download from <a href="http://developer.android.com/sdk/index.html">Android Developer website. </a></li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		If you do all things above, you can go to the next step.</li>
+</ol>
+</section>
+<section id="how_to_import_the_project_in_android_studio">
+	<div class="page-header"><h3>How to Import the Project in Android Studio?</h3><hr class="notop"></div>
+<ol style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Open Android Studio &gt; Import Project (Eclipse ADT, Gradle, ect.)</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		New window will opened &gt; Browse to directory where you place AndroidNewsApp project &nbsp;&gt; Ok</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Wait for few minutes until all process import has finished.</li>
+</ol>
+<p style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+	<img alt="" src="assets/images/image_10.jpg"></p>
+<p style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+	&nbsp;</p>
+<p style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+	<img alt="" src="assets/images/image_11.jpg" style="width: 440px; height: 530px;"></p>
+</section>
+<section id="how_to_rename_the_package_name">
+	<div class="page-header"><h3>How to Rename the Package Name?</h3><hr class="notop"></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	You can change it easily from Android Studio. Here are the steps:</div>
+<ol style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		<div>
+			First click once on your package and then click setting icon on Android Studio.</div>
+	</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		<div>
+			<span style="font-family: inherit; font-style: inherit; font-weight: inherit; line-height: 1.5em;">Close/Unselect Compact Empty Middle Packages</span></div>
+	</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		<div>
+			<span style="font-family: inherit; font-style: inherit; font-weight: inherit; line-height: 1.5em;">Then, right click your package and rename it.</span></div>
+	</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		<div>
+			Right click on the root folder of your project.</div>
+	</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		<div>
+			<span style="font-family: inherit; font-style: inherit; font-weight: inherit; line-height: 1.5em;">Click &quot;Open Module Setting&quot;.</span></div>
+	</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		<div>
+			<span style="font-family: inherit; font-style: inherit; font-weight: inherit; line-height: 1.5em;">Go to the Flavours tab.</span></div>
+	</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		<div>
+			<span style="font-family: inherit; font-style: inherit; font-weight: inherit; line-height: 1.5em;">Change the application ID with same name of your package name before &gt; Press OK.&nbsp;<img alt="" src="assets/images/image_14.jpg" style="width: 1366px; height: 728px;"></span></div>
+	</li>
+</ol>
+<div style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+	<span style="font-family: inherit; font-style: inherit; font-weight: inherit; line-height: 1.5em;"><img alt="" src="assets/images/image_15.jpg" style="width: 1366px; height: 768px;"></span></div>
+<p>
+	&nbsp;</p>
+</section>
+<section id="how_to_change_application_name">
+	<div class="page-header"><h3>How to Change Application Name?</h3><hr class="notop"></div>
+<ol style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Open Android Studio &gt; app &gt; res &gt; values &gt; strings.xml</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Select &#39;strings.xml&#39;</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Enter your app name inside &quot;app_name&quot; string tag :</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		<pre class="prettyprint lang-plain linenums" style="margin: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline;">
+&lt;string name=&quot;app_name&quot;&gt;Android News App&lt;/string&gt;</pre>
+	</li>
+</ol>
+<p style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+	<img alt="" src="assets/images/image_3.jpg" style="font-family: inherit; font-style: inherit; font-weight: inherit; line-height: 1.5em; width: 1366px; height: 728px;"></p>
+</section>
+<section id="how_to_change_header_app_color">
+	<div class="page-header"><h3>How to Change Header App Color?</h3><hr class="notop"></div>
+<ol style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Open Android Studio &gt; app &gt; res &gt; values &gt; colors.xml</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Select &#39;colors.xml&#39;</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Enter your color code inside &quot;header&quot; color tag :</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		<pre class="prettyprint lang-plain linenums" style="margin: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline;">
+&lt;color name=&quot;ColorPrimary&quot;&gt;#448AFF&lt;/color&gt;</pre>
+	</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		This will change the toolbar / header app &amp; app main color. &nbsp;<img alt="" src="assets/images/image_7.jpg"></li>
+</ol>
+</section>
+<section id="how_to_configure_webservice_in_your_server">
+	<div class="page-header"><h3>How to Configure Webservice In Your Server?</h3><hr class="notop"></div>
+<ol style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		First of all find the &#39;news&#39; folder from the downloaded package.</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Copy these folder and paste it in the htdocs folder (if you have Wampp installed then put it into www, if you have Xampp installed then put it into htdocs)</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Open your web browser and go to phpmyadmin page : http://localhost/phpmyadmin, then&nbsp;create a database with name &#39; news&#39; or your own database name and import the database from the &#39;db&#39; folder.</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		After creating database configure the connection file, open &#39;variables.php&#39; in folder &#39;variables&#39; which is in the includes folder of your php admin code package.</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		That&rsquo;s all,now run the webservice : http://localhost/news or your domain name.&nbsp;<img alt="" src="assets/images/image_9.jpg" style="width: 1366px; height: 728px;"></li>
+</ol>
+</section>
+<section id="how_to_configure_api_service_to_connect_data_in_android_app">
+	<div class="page-header"><h3>How to Configure Api Service to Connect Data in Android App?</h3><hr class="notop"></div>
+<ol style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Find file &#39;api.php&#39; inside news directory from php code admin.</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Change DB Host, User, Password and Name same with your database configuration in webservice.&nbsp;<img alt="" src="assets/images/image_8.jpg" style="width: 1366px; height: 728px;"></li>
+</ol>
+</section>
+<section id="username_and_password_for_login_into_admin_panel">
+	<div class="page-header"><h3>Username and Password For Login into Admin Panel</h3><hr class="notop"></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">Username&nbsp;</span>: admin</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">Password&nbsp;</span>: admin</div>
+</section>
+<section id="how_to_put_server_url_in_application">
+	<div class="page-header"><h3>How to put Server Url in Application?</h3><hr class="notop"></div>
+<ol style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Open Android Studio &gt; app &gt; java &gt; yourpackagename &gt; Constant.java</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Open&nbsp;Constant.java</li>
+	<li style="margin: 0px 0px 0px 36px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Change with your own Url address, as example : if your Sever is http://xyz.com/news so your service url like that http://xyz.com/news/..../.php, ect.&nbsp;<img alt="" src="assets/images/image_5.jpg"></li>
+</ol>
+</section>
+<section id="how_to_change_admob_publisher_id">
+	<div class="page-header"><h3>How to Change AdMob Publisher Id?</h3><hr class="notop"></div>
+<ol style="margin: 0px 1.5em 1.5em 3.5em; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-size: 12.8000001907349px; font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; vertical-align: baseline; line-height: 19.2000007629395px; color: rgb(56, 56, 56);">
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Open Android Studio &gt;&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; line-height: 19.2000007629395px;">app</span>&nbsp;&gt; res &gt; values &gt; strings.xml</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Select &#39;strings.xml&#39;</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Enter your AdMob publisher id inside&nbsp;&quot;admob_publisher_id&quot;&nbsp;string tag for banner ads</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Enter your AdMob publisher id inside&nbsp;&quot;admob_interstitial_id&quot;&nbsp;string tag for interstitial&nbsp;ads</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		<div>
+			&lt;string name=&quot;admob_publisher_id&quot;&gt;your admob &nbsp;banner id here&lt;/string&gt;</div>
+		<span style="font-family: inherit; font-size: 12.8000001907349px; font-style: inherit; font-weight: inherit; line-height: 19.2000007629395px;">&lt;string name=&quot;admob_interstitial_id&quot;&gt;your admob interstitial id here&lt;/string&gt;</span><img alt="" src="assets/images/image_2.jpg"></li>
+</ol>
+</section>
+<section id="how_to_change_startapp_id">
+	<div class="page-header"><h3>How to change StartApp Id?</h3><hr class="notop"></div>
+<ol style="margin: 0px 1.5em 1.5em 3.5em; padding-right: 0px; padding-left: 0px; border: 0px; font-size: 12.8000001907349px; font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; vertical-align: baseline; line-height: 19.2000007629395px;">
+	<li style="margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline;">
+		Open Android Studio &gt; app&nbsp;&gt; res &gt; values &gt; strings.xml</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline;">
+		Select &#39;strings.xml&#39;</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline;">
+		Enter your StartApp Application id inside<b>&quot;startapp_app_id&quot;</b>&nbsp;string tag :</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline;">
+		Enter your StartApp Developer id inside&nbsp;<b>&quot;startapp_dev_id&quot;</b>&nbsp;string tag :</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline;">
+		Open app &gt; manifests &gt; AndroidManifest.xml &gt; Change in StartApp Code&nbsp;<img alt="" src="assets/images/image_16.jpg"></li>
+</ol>
+<p style="margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline;">
+	<img alt="" src="assets/images/image_17.jpg" style="width: 1366px; height: 728px;"></p>
+<p style="margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline;">
+	&nbsp;</p>
+</section>
+<section id="how_to_change_parse_push_notification_application_id">
+	<div class="page-header"><h3>How to change Parse Push notification Application Id?</h3><hr class="notop"></div>
+<ol style="margin: 0px 1.5em 1.5em 3.5em; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-size: 12.8000001907349px; font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; vertical-align: baseline; line-height: 19.2000007629395px; color: rgb(56, 56, 56);">
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		First open p<a href="https://parse.com/" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; color: rgb(0, 0, 153); text-decoration: none; cursor: pointer;">arse.com</a>&nbsp;&amp; Register and Login with your Account.</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Press button Create New App in Right Side.</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Enter Your App Name</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Copy Application Id, Client key.</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Open Android Studio &gt; app &gt; res &gt; values &gt; strings.xml</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Enter your Parse Application Id inside&nbsp;<b>&quot;parse_application_id&quot;</b>&nbsp;string tag</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Enter your Parse Client Key Link inside&nbsp;<b>&quot;parse_client_key&quot;</b>&nbsp;string tag&nbsp;<img alt="" src="assets/images/image_13.jpg"></li>
+</ol>
+</section>
+<section id="how_to_change_the_application_icon">
+	<div class="page-header"><h3>How to Change the Application Icon?</h3><hr class="notop"></div>
+<ol style="margin: 0px 1.5em 1.5em 3.5em; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-size: 12.8000001907349px; font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; vertical-align: baseline; line-height: 19.2000007629395px; color: rgb(56, 56, 56);">
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Open Android Studio &gt; app &gt; res &gt; drawable &gt; ic_launcher.png</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Rename your icon with&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; line-height: 19.2000007629395px;">ic_logo_app</span>.png and paste &gt; replace in drawable-hdpi folder&nbsp;</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Do the same with on /drawable-mdpi/, /drawable-xhdpi/, and /drawable-xxhdpi/&nbsp;<img alt="" src="assets/images/image_4.jpg" style="width: 1366px; height: 728px;"></li>
+</ol>
+</section>
+<section id="how_to_disable_date_display_in_news_list">
+	<div class="page-header"><h3>How to Disable Date Display in News List?</h3><hr class="notop"></div>
+<ol style="margin: 0px 1.5em 1.5em 3.5em; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-size: 12.8000001907349px; font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; vertical-align: baseline; line-height: 19.2000007629395px; color: rgb(56, 56, 56);">
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Open Android Studio &gt; app&nbsp;&gt; res &gt; layout</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Select and Open &#39;lsv_item_recent.xml&#39;, &#39;lsv_item_news_list.xml&#39; and &#39;lsv_item_favorite.xml&#39;</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Add attribute string tag in line code textview with have id name&nbsp;@+id/txt_newslistdate.... for each string file like below :</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		<pre class="prettyprint lang-plain linenums">
+<span class="pln" style="font-family: inherit; font-size: 12.8000001907349px; font-style: inherit; font-weight: inherit; line-height: 18px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(72, 72, 76);">android</span><span class="pun" style="font-family: inherit; font-size: 12.8000001907349px; font-style: inherit; font-weight: inherit; line-height: 18px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(147, 161, 161);">:</span><span class="pln" style="font-family: inherit; font-size: 12.8000001907349px; font-style: inherit; font-weight: inherit; line-height: 18px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(72, 72, 76);">visibility</span><span class="pun" style="font-family: inherit; font-size: 12.8000001907349px; font-style: inherit; font-weight: inherit; line-height: 18px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(147, 161, 161);">=</span><span class="str" style="font-family: inherit; font-size: 12.8000001907349px; font-style: inherit; font-weight: inherit; line-height: 18px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; color: rgb(221, 17, 68);">&quot;invisible&quot;</span></pre>
+	</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		for the complete code like picture below :&nbsp;<img alt="" src="assets/images/image_6.jpg" style="width: 1366px; height: 728px;"></li>
+</ol>
+</section>
+<section id="how_to_change_app_about_information">
+	<div class="page-header"><h3>How to Change App About Information?</h3><hr class="notop"></div>
+<ol style="margin: 0px 1.5em 1.5em 3.5em; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-size: 12.8000001907349px; font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; vertical-align: baseline; line-height: 19.2000007629395px; color: rgb(56, 56, 56);">
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Open Android Studio &gt;&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; line-height: 19.2000007629395px;">app</span>&nbsp;&gt; res &gt; values &gt; strings.xml</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Select &#39;strings.xml&#39;</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		Enter your about information below in&nbsp;&lt;!-- About Content --&gt;&nbsp;string tag&nbsp;</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline; list-style: decimal;">
+		For advanced change about content, you also can go to res &gt; layout &gt; about_us.xml<img alt="" src="assets/images/image_1.jpg"  ></li>
+</ol>
+</section>
+<section id="how_to_change_more_app_link">
+	<div class="page-header"><h3>How to change More App Link?</h3><hr class="notop"></div>
+<ol style="margin: 0px 1.5em 1.5em 3.5em; padding-right: 0px; padding-left: 0px; border: 0px; font-size: 12.8000001907349px; font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; vertical-align: baseline; line-height: 19.2000007629395px;">
+	<li style="margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline;">
+		Open Android Studio &gt;&nbsp;<span style="color: rgb(56, 56, 56); font-size: 12.8000001907349px; line-height: 19.2000007629395px;">app</span>&nbsp;&gt; res &gt;values &gt; strings.xml</li>
+	<li style="margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 12.8000001907349px; font-family: inherit; vertical-align: baseline;">
+		Enter your Play Store Apps Link inside&nbsp;<b>&quot;</b>play_more_apps<b>&quot;</b>&nbsp;string tag:<br>
+		&lt;string name=&quot;play_more_apps&quot;&gt;Your App Url&lt;/string&gt;&nbsp;<img alt="" src="assets/images/image_12.jpg"></li>
+</ol>
+</section>
+<section id="psd_files">
+	<div class="page-header"><h3>PSD Files</h3><hr class="notop"></div>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	I&#39;ve included psd with this app for c<span style="font-family: inherit; font-style: inherit; font-weight: inherit; color: rgb(34, 34, 34);">ategory icon menu in Admin Panel.&nbsp;</span><span style="line-height: 1.5em;">If you&#39;d like to change the menu image in the main menu, open &quot;</span><span style="line-height: 1.5em;">psd news category</span><span style="line-height: 1.5em;">.psd&quot;, make the necessary adjustments, just upload into your admin panel.</span></p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	&nbsp;</p>
+</section>
+<section id="graphics">
+	<div class="page-header"><h3>Graphics</h3><hr class="notop"></div>
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;">You will find all image into /res/drawable/, /res/drawable-mdpi/, /res/drawable-hdpi/, /res/drawable-xhdpi/ folder. Just create your own graphics and replace those files. Create seperate graphics of different device screen sizes &amp; place them into other drawble folders (drawable-hdpi &amp; drawable-xhdpi) with same file name found at drawable-mdpi folder. Check here for more information:&nbsp;</span><a href="http://developer.android.com/design/style/devices-displays.html" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer; line-height: 18px;">Devices and Displays</a>&nbsp;<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;">and&nbsp;</span><a href="http://developer.android.com/guide/practices/screens_support.html" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(0, 0, 255); text-decoration: none; cursor: pointer; line-height: 18px;">Supporting Multiple Screens</a><span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;">.</span></p>
+</section>
+<section id="rating">
+	<div class="page-header"><h3>Rating</h3><hr class="notop"></div>
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;">If you like our app, we will highly appreciate if you can provide us a rating of 5. You can rate us from your CodeCanyon Menu &gt; Download page.</span></p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;">Once again, thank you so much for purchasing this app. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this app. No guarantees, but I&#39;ll do my best to assist. If you have a more general question relating to the apps on CodeCanyon, you might consider visiting the &quot;FAQ / Support&quot; section and asking your question in the &quot;Comments&quot; section at CodeCanyon app detail page.</span></p>
+</section>
+
+	</div>
+</body>
+</html>
